@@ -24,9 +24,9 @@ The result will be an EBAZ4205:
 See:
 * [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
  for preparing the EBAZ4205 (power supply, JTAG and serial connections, Ethernet)
+* My Hackaday project (TODO) to connect the HDMI cable to the EBAZ4205
  
 ### Software tools
-
 * Vivado 2021.2 on Windows 10 or 11
 * VMWare VirtualBox 6.1 on Windows 10 or 11
 * Ubuntu 20.04.1 on VMWare VirtualBox 6.1
