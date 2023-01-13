@@ -6,12 +6,13 @@ This repository contains the Vivado project, the PetaLinux project, and the Viti
 
 The result will be an EBAZ4205:
 * loading from the SD Card
+* with a hardware HDMI out port directly connected to the J1 EBAZ4205 connector (no extra hardware required)
 * running Linux (PetaLinux):
     * connected to a local network via Ethernet (IP obtained by DHCP)
     * with a serial console connected to the J7 connector of EBAZ4205 (serial)
     * with a SSH server connectable with any SSH client and/or WinSCP  
     * any application running on a linux console
-    * with a HDMi video out port (640x480 or 800x600 or 1080x720) 
+    * with a HDMI video out port (640x480 or 800x600 or 1080x720) 
 
 ## Requirement
 
