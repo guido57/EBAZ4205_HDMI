@@ -24,7 +24,7 @@ The result will be an EBAZ4205:
 See:
 * [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
  for preparing the EBAZ4205 (power supply, JTAG and serial connections, Ethernet)
-* My Hackaday project (TODO) to connect the HDMI cable to the EBAZ4205
+* [My Hackaday project to connect the HDMI cable to the EBAZ4205](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
  
 ### Software tools
 * Vivado 2021.2 on Windows 10 or 11
@@ -33,11 +33,11 @@ See:
 * Petalinux 2021.2 on Ubuntu 20.04.1
 
 ## How to Build
-1) Build the HDMI hardware port (see my Hackaday project=)
+1) Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
 2) Download my EBAZ4205_HDMI.wic file, flash it on an SD card (with Balena-Etcher or similar program) and go! (TODO)
 or 
-2) Download the Vivado Project, create the bitstream and export the hardware
-3) Download the Vitis Project, "update the hardware" with the just exported hardware ild  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
+3) Download the Vivado Project, create the bitstream and export the hardware
+4) Download the Vitis Project, "update the hardware" with the just exported hardware.  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 * Create the block design, the bitstream and the hardware definition with Vivado
 * [Use the hardware definition to build an bootable SD Card with petalinux and test it on EBAZ4205](./docs/how-to-build.md)
 
