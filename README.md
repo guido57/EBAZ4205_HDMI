@@ -19,7 +19,8 @@ The result will be an EBAZ4205:
 ## Hardware Requirements
 
 * EBAZ4205 (with or without 25MHz crystal)
-* HDMI cable
+* PS/2 wired Mouse, possibly with the wheel (IntelliMouse) 
+* HDMI cable and display (very useful to see the mouse pointer!) 
 
 See:
 * [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
@@ -34,13 +35,12 @@ See:
 
 ## How to Build
 1) Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
-2) Download my EBAZ4205_HDMI.wic file, flash it on an SD card (with Balena-Etcher or similar program) and go! (TODO)
+2) Download my EBAZ4205_PS2.wic file, flash it on an SD card (with Balena-Etcher or similar program) and go! (TODO)
 or 
 3) Download the Vivado Project, create the bitstream and export the hardware
 4) Download the Vitis Project, "update the hardware" with the just exported hardware.  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 * Create the block design, the bitstream and the hardware definition with Vivado
 * [Use the hardware definition to build an bootable SD Card with petalinux and test it on EBAZ4205](./docs/how-to-build.md)
-
 
 
 ## References
