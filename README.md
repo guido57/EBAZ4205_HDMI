@@ -44,14 +44,21 @@ See also:
 * Vitis 2022.2 on Ubuntu 20.04 or Windows 10 or 11
 
 ## How to build the software from scratch
-1) Build the HDMI hardware port. See my [My Hackaday project to connect the HDMI cable to the EBAZ4205](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
-2) Download my [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZoYBp8), flash it on an SD card (with Balena-Etcher or similar program) and go! 
-or 
-3) Download the Vivado Project, create the bitstream and export the hardware
-4) Download the Vitis Project, "update the hardware" with the just exported hardware.  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
-* Create the block design, the bitstream and the hardware definition with Vivado
-* [Use the hardware definition to build an bootable SD Card with petalinux and test it on EBAZ4205](./docs/how-to-build.md)
-* Goto "Getting Started"
+### Vitis: to modify my colorbars software or build other similar utilities
+
+1) Follow the "Getting Started" instructions
+2) Download or clone this repository or at least the Vitis folder into an Ubuntu 20.04 or Windows 10 or 11 host PC.
+3) Install Vitis 2022.2 in the same host PC
+4) Run Vitis and select the Vitis workspace (the folder where ide.log is)
+
+![](./docs/Vitis-EBAZ4205-HDMI.png)
+
+5) In Vitis:
+   * build the EBAZ4205_SDR_HDMI_PS2 project
+   * modify the IP address of the remote target with the IP assigned to the EBAZ4205 by the DHCP (of course the EBA4205 Ethernet port must be connected to your home router)
+   * open the Explorer and find display_demo.c just to see the main() source code.
+   * run Debug
+6) If everything is OK, Vitis will connect to the TCF server running on the EBAZ4205 and you'll be able to debug/run.
 
 ## References
 
