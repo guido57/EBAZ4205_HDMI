@@ -17,21 +17,6 @@ The result will be an EBAZ4205:
     * any application running on a linux console
     * with a HDMI video out port (640x480 or 800x600 or 1280x720) 
 
-## Hardware Requirements
-
-* EBAZ4205 (with or without 25MHz crystal)
-* HDMI cable and HDMI display (I use an old TV set with an HDMI port) 
-
-See:
-* [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
- for preparing the EBAZ4205 (power supply, JTAG and serial connections, Ethernet)
-* [My Hackaday project to connect the HDMI cable to the EBAZ4205](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
- 
-### Software tools
-* Vivado 2022.2 on Ubuntu 20.04 or Windows 10 or 11
-* Petalinux 2022.2 on Ubuntu 20.04
-* Vitis 2022.2 on Ubuntu 20.04 or Windows 10 or 11
-
 ## Getting Started
 Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the software, you can simply download my SD car image.
 In this case, follow these steps.
@@ -41,14 +26,29 @@ In this case, follow these steps.
 * Insert the just programmed SD card into the EBAZ4205 and power supply it
 * After a few seconds, you'll see the colorbars on the HDMI monitor 
 
+## Hardware Requirements
+* EBAZ4205 (with or without 25MHz crystal)
+* HDMI cable and HDMI display (I use an old TV set with an HDMI port) 
+
+See also:
+* [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
+ for preparing the EBAZ4205 (power supply, JTAG and serial connections, Ethernet)
+* [My Hackaday project to connect the HDMI cable to the EBAZ4205](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
+ 
+## Software tools
+* Vivado 2022.2 on Ubuntu 20.04 or Windows 10 or 11
+* Petalinux 2022.2 on Ubuntu 20.04
+* Vitis 2022.2 on Ubuntu 20.04 or Windows 10 or 11
+
 ## How to build the software from scratch
-1) Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
+1) Build the HDMI hardware port. See my [My Hackaday project to connect the HDMI cable to the EBAZ4205](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
 2) Download my [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZoYBp8), flash it on an SD card (with Balena-Etcher or similar program) and go! 
 or 
 3) Download the Vivado Project, create the bitstream and export the hardware
 4) Download the Vitis Project, "update the hardware" with the just exported hardware.  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 * Create the block design, the bitstream and the hardware definition with Vivado
 * [Use the hardware definition to build an bootable SD Card with petalinux and test it on EBAZ4205](./docs/how-to-build.md)
+* Goto "Getting Started"
 
 ## References
 
@@ -56,9 +56,7 @@ or
 * [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 
 ### EBAZ4205
-
 * [KeitetsuWorks EBAZ4205](https://github.com/KeitetsuWorks/EBAZ4205)
 
 ## License
-
 * MIT
