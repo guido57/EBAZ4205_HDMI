@@ -50,9 +50,13 @@ See also:
 2) Download or clone this repository or at least the Vitis folder into an Ubuntu 20.04 or Windows 10 or 11 host PC.
 3) Install Vitis 2022.2 in the same host PC
 4) Run Vitis and select the Vitis workspace (the folder where ide.log is)
+
+![](./docs/Vitis-EBAZ4205-HDMI.png)
+
 5) In Vitis:
    * build the EBAZ4205_SDR_HDMI_PS2 project
    * modify the IP address of the remote target with the IP assigned to the EBAZ4205 by the DHCP (of course the EBA4205 Ethernet port must be connected to your home router)
+   * open the Explorer and find display_demo.c just to see the main() source code.
    * run Debug
 6) If everything is OK, Vitis will connect to the TCF server running on the EBAZ4205 and you'll be able to debug/run.
 
