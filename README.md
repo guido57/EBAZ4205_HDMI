@@ -34,7 +34,7 @@ See:
 
 ## How to Build
 1) Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
-2) Download my EBAZ4205_HDMI.wic file, flash it on an SD card (with Balena-Etcher or similar program) and go! 
+2) Download my [ebaz4205-hdmi-colorbars.wic 6GB](bit.ly/3ZoYBp8), flash it on an SD card (with Balena-Etcher or similar program) and go! 
 or 
 3) Download the Vivado Project, create the bitstream and export the hardware
 4) Download the Vitis Project, "update the hardware" with the just exported hardware.  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
