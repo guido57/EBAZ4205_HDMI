@@ -1,0 +1,89 @@
+timestamp=[2023-02-18 19:33:17], mode=WORKBENCH_START, duration=0:00:03.084, duration_ms=3084, data={}
+timestamp=[2023-02-18 19:33:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.270, duration_ms=270, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-02-18 19:33:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.177, duration_ms=177, data={}
+timestamp=[2023-02-18 19:38:44], mode=APP_CREATION, duration=0:00:08.346, duration_ms=8346, data={name=EBAZ4205_SDR_HDMI_PS2, project_type=sdk, os=linux, processor=, runtime=cpp, platform=ebaz4205_wrapper, application_type=application}
+timestamp=[2023-02-18 19:39:20], mode=PLATFORM_GENERATION, duration=0:00:06.741, duration_ms=6741, data={name=ebaz4205_wrapper}
+timestamp=[2023-02-18 19:39:21], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 11:24:15], mode=WORKBENCH_START, duration=0:00:05.347, duration_ms=5347, data={}
+timestamp=[2023-02-19 11:24:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.225, duration_ms=225, data={}
+timestamp=[2023-02-19 11:24:16], mode=WORKBENCH_UI_INIT, duration=0:00:00.477, duration_ms=477, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=EBAZ4205_SDR_HDMI_PS2,EBAZ4205_SDR_HDMI_PS2_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-02-19 11:30:01], mode=BUILD, duration=0:00:00.154, duration_ms=154, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 11:54:23], mode=WORKBENCH_START, duration=0:00:03.724, duration_ms=3724, data={}
+timestamp=[2023-02-19 11:54:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.162, duration_ms=162, data={}
+timestamp=[2023-02-19 11:54:23], mode=WORKBENCH_UI_INIT, duration=0:00:00.461, duration_ms=461, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=EBAZ4205_SDR_HDMI_PS2,EBAZ4205_SDR_HDMI_PS2_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-02-19 11:55:50], mode=BUILD, duration=0:00:00.867, duration_ms=867, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 11:56:56], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 11:57:35], mode=BUILD, duration=0:00:00.532, duration_ms=532, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 11:57:49], mode=BUILD, duration=0:00:01.285, duration_ms=1285, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:20:07], mode=BUILD, duration=0:00:00.332, duration_ms=332, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:21:59], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:22:22], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:22:43], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:23:27], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:23:47], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:24:14], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:24:36], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:24:53], mode=BUILD, duration=0:00:00.183, duration_ms=183, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:25:12], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:25:38], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:26:01], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:28:06], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:28:33], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:28:56], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:29:26], mode=BUILD, duration=0:00:00.185, duration_ms=185, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:29:38], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:30:54], mode=BUILD, duration=0:00:00.189, duration_ms=189, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:31:08], mode=BUILD, duration=0:00:00.179, duration_ms=179, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:31:17], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:31:30], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:31:39], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 12:32:13], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 15:26:10], mode=BUILD, duration=0:00:00.253, duration_ms=253, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 15:26:31], mode=BUILD, duration=0:00:00.182, duration_ms=182, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 15:28:24], mode=BUILD, duration=0:00:00.332, duration_ms=332, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 15:28:56], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-19 15:29:13], mode=BUILD, duration=0:00:00.227, duration_ms=227, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 09:10:53], mode=BUILD, duration=0:00:00.893, duration_ms=893, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-03 10:41:40], mode=WORKBENCH_START, duration=0:00:05.026, duration_ms=5026, data={}
+timestamp=[2023-03-03 10:41:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.210, duration_ms=210, data={}
+timestamp=[2023-03-03 10:41:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.459, duration_ms=459, data={editors_count=13, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=EBAZ4205_SDR_HDMI_PS2,EBAZ4205_SDR_HDMI_PS2_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-03-03 10:47:56], mode=PLATFORM_GENERATION, duration=0:00:04.251, duration_ms=4251, data={name=ebaz4205_wrapper}
+timestamp=[2023-03-03 10:47:57], mode=BUILD, duration=0:00:00.436, duration_ms=436, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-03 10:48:36], mode=PLATFORM_GENERATION, duration=0:00:04.484, duration_ms=4484, data={name=ebaz4205_wrapper}
+timestamp=[2023-03-03 10:48:36], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=true}
+timestamp=[2023-03-03 10:48:52], mode=PLATFORM_GENERATION, duration=0:00:12.331, duration_ms=12331, data={name=ebaz4205_wrapper}
+timestamp=[2023-03-03 10:48:53], mode=BUILD, duration=0:00:01.035, duration_ms=1035, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-03 10:50:08], mode=BUILD, duration=0:00:01.083, duration_ms=1083, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-03 15:30:36], mode=WORKBENCH_START, duration=0:00:03.718, duration_ms=3718, data={}
+timestamp=[2023-03-03 15:30:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.178, duration_ms=178, data={}
+timestamp=[2023-03-03 15:30:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.496, duration_ms=496, data={editors_count=13, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=EBAZ4205_SDR_HDMI_PS2,EBAZ4205_SDR_HDMI_PS2_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-03-03 21:29:08], mode=WORKBENCH_START, duration=0:00:04.318, duration_ms=4318, data={}
+timestamp=[2023-03-03 21:29:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.207, duration_ms=207, data={}
+timestamp=[2023-03-03 21:29:09], mode=WORKBENCH_UI_INIT, duration=0:00:00.404, duration_ms=404, data={editors_count=13, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=EBAZ4205_SDR_HDMI_PS2,EBAZ4205_SDR_HDMI_PS2_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-03-03 22:14:50], mode=BUILD, duration=0:00:00.987, duration_ms=987, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 13:18:26], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 13:18:35], mode=BUILD, duration=0:00:00.335, duration_ms=335, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 13:20:02], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 16:55:24], mode=BUILD, duration=0:00:02.258, duration_ms=2258, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 17:16:56], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:22:37], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:23:23], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:24:17], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:24:41], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:28:32], mode=BUILD, duration=0:00:00.387, duration_ms=387, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:35:59], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:52:07], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:52:21], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:59:40], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 18:59:57], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:00:08], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:00:45], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:11:20], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:11:50], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:28:20], mode=BUILD, duration=0:00:00.289, duration_ms=289, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:28:48], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:29:31], mode=BUILD, duration=0:00:00.342, duration_ms=342, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:31:57], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 19:32:26], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 22:25:59], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
+timestamp=[2023-03-04 22:27:12], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=EBAZ4205_SDR_HDMI_PS2, configuration=Debug, clean_build=false}
