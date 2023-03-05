@@ -26,7 +26,8 @@ In this case, follow these steps.
 * Flash it on an SD card (with Balena-Etcher or similar program)
 * Insert the just programmed SD card into the EBAZ4205 and power supply it
 * After a few seconds, you'll see the colorbars on the HDMI monitor 
-This solution is not trivial, because it lets you to do all the things listed in the "Description" approaching the complex world of Zynq-7000 (FPGA programming + Embedded Linux building) step bt step.
+ 
+This solution is not trivial at all, because it lets you to do all the things listed in the "Description", approaching the complex world of Zynq-7000 (FPGA programming + Embedded Linux building) step bt step.
 
 ## Hardware Requirements
 * EBAZ4205 (with or without 25MHz crystal)
