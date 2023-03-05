@@ -32,7 +32,16 @@ See:
 * Petalinux 2022.2 on Ubuntu 20.04
 * Vitis 2022.2 on Ubuntu 20.04 or Windows 10 or 11
 
-## How to Build
+## Getting Started
+Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the software, you can simply download my SD car image.
+In this case, follow these steps.
+* Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
+* Download my SD card "wic" [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZoYBp8)
+* Flash it on an SD card (with Balena-Etcher or similar program)
+* Insert the just programmed SD card into the EBAZ4205 and power supply it
+* After a few seconds, you'll see the colorbars on the HDMI monitor 
+
+## How to build the software from scratch
 1) Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
 2) Download my [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZoYBp8), flash it on an SD card (with Balena-Etcher or similar program) and go! 
 or 
@@ -40,7 +49,6 @@ or
 4) Download the Vitis Project, "update the hardware" with the just exported hardware.  Read carefully my Hackaday Project: [Cheap (35$) and powerful FPGA programming](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 * Create the block design, the bitstream and the hardware definition with Vivado
 * [Use the hardware definition to build an bootable SD Card with petalinux and test it on EBAZ4205](./docs/how-to-build.md)
-
 
 ## References
 
