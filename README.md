@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the Vivado project, the PetaLinux project, and the Vitis software projects (both Standalone and Linux) to implement the EBAZ4205 board with an HDMI video out port.
+This repository contains the Vivado project, the PetaLinux project, and the Vitis software projects for Linux to implement the EBAZ4205 board with an HDMI video out port.
 
 ![](./docs/EBAZ4205-HDMI.png)
 
@@ -14,17 +14,22 @@ The result will be an EBAZ4205:
     * with an serial console connected to the J7 connector of EBAZ4205 (serial)
     * with an SSH server connectable with any SSH client
     * with an SFTP server connectable with any sftp client like WinSCP or FileZilla 
-    * any application running on a linux console
+    * with a TCF server which connect to by Vitis to cross compile and debug 
+    * with any application running on a linux console
     * with a HDMI video out port (640x480 or 800x600 or 1280x720) 
 
 ## Getting Started
-Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the software, you can simply download my SD car image.
+Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the software, you can simply download my SD card image.
 In this case, follow these steps.
 * Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
 * Download my SD card "wic" [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZoYBp8)
 * Flash it on an SD card (with Balena-Etcher or similar program)
 * Insert the just programmed SD card into the EBAZ4205 and power supply it
 * After a few seconds, you'll see the colorbars on the HDMI monitor 
+This solution is not trivial, because:
+it lets you to open a shell via serial console (user: ebaz  password: ebaz) and use the colorbars application /etc/init.d/colorbars to test different resolutions or color patterns 
+Build any application you want, by Vitis, to 
+
 
 ## Hardware Requirements
 * EBAZ4205 (with or without 25MHz crystal)
