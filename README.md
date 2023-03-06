@@ -16,10 +16,10 @@ The result will be an EBAZ4205:
     * with an SFTP server connectable with any sftp client like WinSCP or FileZilla. User: ebaz  Pwd: ebaz 
     * with a TCF server to connect to by Vitis (IP obtained by DHCP, port: 1534) to cross compile and remote debugging 
     * with a colorbars application /etc/init.d/colorbars to test different resolutions or color patterns 
-    * with a HDMI video out port (640x480 or 800x600 or 1280x720) 
+    * with a HDMI video out port (640x480 or 800x600 or 1280x720)  
 
 ## Getting Started
-Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the FPGA hardware (PL) and the software (Linux Kernel, Root File System and programs), you can simply download my SD card image.
+Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the FPGA hardware (PL) and the software (Linux Kernel, Root File System and programs), not loosing any of the features listed above, you can simply download my SD card image.
 In this case, follow these steps.
 * Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
 * Download my SD card "wic" [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZoYBp8)
@@ -27,7 +27,7 @@ In this case, follow these steps.
 * Insert the just programmed SD card into the EBAZ4205 and power supply it
 * After a few seconds, you'll see the colorbars on the HDMI monitor 
  
-This solution is not trivial at all, because it lets you to do all the things listed in the "Description", approaching the complex world of Zynq-7000 (FPGA programming + Embedded Linux building) step bt step.
+This solution is not trivial at all, because it lets you to do all the things listed in the "Description", approaching the complex world of Zynq-7000 (FPGA programming + Embedded Linux building) step by step.
 
 ## Hardware Requirements
 * EBAZ4205 (with or without 25MHz crystal)
@@ -49,7 +49,7 @@ See also:
 1) Follow the "Getting Started" instructions
 2) Download or clone this repository or at least the Vitis folder into an Ubuntu 20.04 or Windows 10 or 11 host PC.
 3) Install Vitis 2022.2 in the same host PC
-4) Run Vitis and select the Vitis workspace (the folder where ide.log is)
+4) Run Vitis and select the Vitis workspace folder (the folder where ide.log is)
    Now you should see the project in Vitis, like the following image, but without the "Console" window.
 
 ![](./docs/Vitis-EBAZ4205-HDMI.png)
