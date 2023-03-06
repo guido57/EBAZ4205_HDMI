@@ -25,7 +25,7 @@ In this case, follow these steps.
 * Download my SD card "wic" [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZnJCvV)
 * Flash it on an SD card (with Balena-Etcher or similar program)
 * Insert the just programmed SD card into the EBAZ4205 and power supply it
-* After a few seconds, you'll see the colorbars on the HDMI monitor 
+* After around 35 seconds on first boot and 20 seconds all the following boots, you'll see the colorbars on the HDMI monitor 
  
 This solution is not trivial at all, because it lets you to do all the things listed in the "Description", approaching the complex world of Zynq-7000 (FPGA programming + Embedded Linux building) step by step.
 
