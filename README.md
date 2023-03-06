@@ -22,7 +22,7 @@ The result will be an EBAZ4205:
 Just to test your hardware (EBAZ4205 with an HDMI cable connected to port J2) without building the FPGA hardware (PL) and the software (Linux Kernel, Root File System and programs), not loosing any of the features listed above, you can simply download my SD card image.
 In this case, follow these steps.
 * Build the HDMI hardware port. See my Hackaday project [EBAZ4205 HDMI Video Out](https://hackaday.io/project/189164-ebaz4205-hdmi-video-out)
-* Download my SD card "wic" [ebaz4205-hdmi-colorbars.wic 6GB](https://bit.ly/3ZnJCvV)
+* Download my SD card "wic" [ebaz4205-hdmi-colorbars.wic 6GB](https://guidogiorgetti-my.sharepoint.com/:u:/g/personal/guido_guidogiorgetti_onmicrosoft_com/ESfm0HwnGMxLqY4y0A43CKcB2uM1cpfbK06OaPsjBh71ew?download=1)
 * Flash it on an SD card (with Balena-Etcher or similar program)
 * Insert the just programmed SD card into the EBAZ4205 and power supply it
 * After around 35 seconds on first boot and 20 seconds all the following boots, you'll see the colorbars on the HDMI monitor 
