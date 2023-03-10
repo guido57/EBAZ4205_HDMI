@@ -1,0 +1,1626 @@
+
+*** Running vivado
+    with args -log ebaz4205_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ebaz4205_wrapper.tcl -notrace
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source ebaz4205_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/guido/Acer/EBAZ4205_SDR_HDMI/Zynq/axis-capture'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/guido/Acer/PS2_mouse_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/guido/Acer/EBAZ4205_SDR_HDMI/Zynq/axi_dynclk_v1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/guido/Acer/EBAZ4205_SDR_HDMI/Zynq/rgb2dvi'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/guido/Xilinx-tools/Vivado/2022.2/data/ip'.
+Command: link_design -top ebaz4205_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy4_25MHz_0/ebaz4205_DivideBy4_25MHz_0.dcp' for cell 'ebaz4205_i/DivideBy2_50MHz'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/ebaz4205_axis_capture_0_4.dcp' for cell 'ebaz4205_i/axis_capture_RF'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/ebaz4205_ps2_mouse_0_0.dcp' for cell 'ebaz4205_i/ps2_mouse_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_mux_0_0/ebaz4205_axis_mux_0_0.dcp' for cell 'ebaz4205_i/ADC_TestGen/axis_mux_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_0/ebaz4205_dds_compiler_0_0.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/RF_test_10MHz'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_c_addsub_0_1/ebaz4205_c_addsub_0_1.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_2/ebaz4205_dds_axi_interface_0_2.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_2/ebaz4205_dds_compiler_0_2.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/dds_compiler_1KHz'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_2/ebaz4205_mult_gen_0_2.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/mult_gen_AM_modulator'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_1/ebaz4205_mult_gen_0_1.dcp' for cell 'ebaz4205_i/AM_demodulator/I_square'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_1_0/ebaz4205_mult_gen_1_0.dcp' for cell 'ebaz4205_i/AM_demodulator/Q_square'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_c_addsub_0_0/ebaz4205_c_addsub_0_0.dcp' for cell 'ebaz4205_i/AM_demodulator/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_sqrt32_0_0/ebaz4205_sqrt32_0_0.dcp' for cell 'ebaz4205_i/AM_demodulator/sqrt32_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_sin_0/ebaz4205_mult_sin_0.dcp' for cell 'ebaz4205_i/DDC/ComplexMult/mult_cos'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_0/ebaz4205_mult_gen_0_0.dcp' for cell 'ebaz4205_i/DDC/ComplexMult/mult_sin'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_RF_test_1MHz_0/ebaz4205_RF_test_1MHz_0.dcp' for cell 'ebaz4205_i/DDC/LO/DDS_LO'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_0/ebaz4205_dds_axi_interface_0_0.dcp' for cell 'ebaz4205_i/DDC/LO/DDS_LO_axi_interface'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_cic_compiler_0_0/ebaz4205_cic_compiler_0_0.dcp' for cell 'ebaz4205_i/FILTER/CIC_I_1024'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_cic_compiler_0_1/ebaz4205_cic_compiler_0_1.dcp' for cell 'ebaz4205_i/FILTER/CIC_Q_1024'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/ebaz4205_fir_compiler_0_0.dcp' for cell 'ebaz4205_i/FILTER/FIR_I_2'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/ebaz4205_fir_compiler_0_1.dcp' for cell 'ebaz4205_i/FILTER/FIR_Q_2'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.dcp' for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_interface_DEC_RATE_Q_0/ebaz4205_axi_interface_DEC_RATE_Q_0.dcp' for cell 'ebaz4205_i/FILTER/axi_interface_DEC_RATE_I'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_1/ebaz4205_dds_axi_interface_0_1.dcp' for cell 'ebaz4205_i/FILTER/axi_interface_DEC_RATE_Q'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_3/ebaz4205_mult_gen_0_3.dcp' for cell 'ebaz4205_i/FILTER/mult_by_GAIN_I'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_by_4_0/ebaz4205_mult_by_4_0.dcp' for cell 'ebaz4205_i/FILTER/mult_by_GAIN_Q'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_dynclk_0_0/ebaz4205_axi_dynclk_0_0.dcp' for cell 'ebaz4205_i/HDMI/axi_dynclk_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.dcp' for cell 'ebaz4205_i/HDMI/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.dcp' for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.dcp' for cell 'ebaz4205_i/HDMI/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/ebaz4205_axis_subset_converter_0_0.dcp' for cell 'ebaz4205_i/HDMI/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rgb2dvi_0_3/ebaz4205_rgb2dvi_0_3.dcp' for cell 'ebaz4205_i/HDMI/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1.dcp' for cell 'ebaz4205_i/HDMI/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0.dcp' for cell 'ebaz4205_i/HDMI/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_0/ebaz4205_auto_pc_0.dcp' for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0.dcp' for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0.dcp' for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy10_0/ebaz4205_DivideBy10_0.dcp' for cell 'ebaz4205_i/I2S/DivideBy10'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_I2S_Transmitter_0_2/ebaz4205_I2S_Transmitter_0_2.dcp' for cell 'ebaz4205_i/I2S/I2S_Transmitter_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_0/ebaz4205_DivideBy2N_0_0.dcp' for cell 'ebaz4205_i/PS/DivideBy4_25MHz'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.dcp' for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.dcp' for cell 'ebaz4205_i/PS/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.dcp' for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.dcp' for cell 'ebaz4205_i/PS/rst_ps7_0_140M'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.dcp' for cell 'ebaz4205_i/PS/rst_ps7_0_64M'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_xbar_0/ebaz4205_xbar_0.dcp' for cell 'ebaz4205_i/ps7_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0.dcp' for cell 'ebaz4205_i/ps7_axi_periph/m01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1.dcp' for cell 'ebaz4205_i/ps7_axi_periph/m04_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2.dcp' for cell 'ebaz4205_i/ps7_axi_periph/m05_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3.dcp' for cell 'ebaz4205_i/ps7_axi_periph/m06_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_1/ebaz4205_auto_pc_1.dcp' for cell 'ebaz4205_i/ps7_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1992.492 ; gain = 0.000 ; free physical = 7985 ; free virtual = 21730
+INFO: [Netlist 29-17] Analyzing 1364 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_0/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_board.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_0/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_board.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:64]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:120]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:124]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:136]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:144]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:148]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:156]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:160]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:168]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:172]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:176]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:180]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:184]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_board.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_board.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rgb2dvi_0_3/src/rgb2dvi.xdc] for cell 'ebaz4205_i/HDMI/rgb2dvi_0/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rgb2dvi_0_3/src/rgb2dvi.xdc] for cell 'ebaz4205_i/HDMI/rgb2dvi_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER/FIR_Q_2/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER/FIR_Q_2/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER/FIR_I_2/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER/FIR_I_2/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_board.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_board.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_board.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_board.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_board.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_board.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc] for cell 'ebaz4205_i/PS/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.468750 which will be rounded to 0.469 to ensure it is an integer multiple of 1 picosecond [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc:24]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.206250 which will be rounded to 0.206 to ensure it is an integer multiple of 1 picosecond [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc:27]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc] for cell 'ebaz4205_i/PS/processing_system7_0/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.srcs/constrs_1/imports/new/ebaz4205.xdc]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.srcs/constrs_1/imports/new/ebaz4205.xdc]
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rgb2dvi_0_3/src/rgb2dvi_clocks.xdc] for cell 'ebaz4205_i/HDMI/rgb2dvi_0/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rgb2dvi_0_3/src/rgb2dvi_clocks.xdc] for cell 'ebaz4205_i/HDMI/rgb2dvi_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_tc_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_tc_0/U0'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_regslice/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc:2]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m01_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_0/ebaz4205_auto_cc_0_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m01_couplers/auto_cc/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m04_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1_clocks.xdc:17]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_1/ebaz4205_auto_cc_1_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m04_couplers/auto_cc/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m05_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2_clocks.xdc:17]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_2/ebaz4205_auto_cc_2_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m05_couplers/auto_cc/inst'
+Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m06_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3_clocks.xdc:17]
+Finished Parsing XDC File [/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_cc_3/ebaz4205_auto_cc_3_clocks.xdc] for cell 'ebaz4205_i/ps7_axi_periph/m06_couplers/auto_cc/inst'
+INFO: [Project 1-1714] 77 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 11 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7451 ; free virtual = 21197
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 196 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 150 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+69 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 3225.656 ; gain = 1233.164 ; free physical = 7451 ; free virtual = 21197
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.49 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7432 ; free virtual = 21178
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 71946e1f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.56 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7415 ; free virtual = 21161
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR/I_SM/vert_count[0]_i_3 into driver instance ebaz4205_i/HDMI/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR/I_SM/zero_vsize_err_i_2, which resulted in an inversion of 77 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/pDataOutRaw[9]_i_1 into driver instance ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/pDataOutRaw[9]_i_2__0, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/pDataOutRaw[9]_i_1__0 into driver instance ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/pDataOutRaw[9]_i_2__1, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/q_m_2[7]_i_1 into driver instance ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/q_m_2[7]_i_2__1, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 11c4ce681
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.92 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7192 ; free virtual = 20938
+INFO: [Opt 31-389] Phase Retarget created 398 cells and removed 792 cells
+INFO: [Opt 31-1021] In phase Retarget, 74 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 18b9bedef
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7192 ; free virtual = 20938
+INFO: [Opt 31-389] Phase Constant propagation created 886 cells and removed 1505 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 427 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: d6609fe3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7189 ; free virtual = 20935
+INFO: [Opt 31-389] Phase Sweep created 5 cells and removed 1678 cells
+INFO: [Opt 31-1021] In phase Sweep, 139 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG ebaz4205_i/DivideBy2_50MHz/inst/clk_out_BUFG_inst to drive 152 load(s) on clock net ebaz4205_i/DivideBy2_50MHz/inst/clk_out_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 105eb64c0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7188 ; free virtual = 20933
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 105eb64c0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7188 ; free virtual = 20933
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f2bf8f28
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7188 ; free virtual = 20933
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 42 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             398  |             792  |                                             74  |
+|  Constant propagation         |             886  |            1505  |                                            427  |
+|  Sweep                        |               5  |            1678  |                                            139  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             42  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7187 ; free virtual = 20933
+Ending Logic Optimization Task | Checksum: 12e4ee369
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3225.656 ; gain = 0.000 ; free physical = 7187 ; free virtual = 20933
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 29 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 5 newly gated: 0 Total Ports: 58
+Ending PowerOpt Patch Enables Task | Checksum: 1d35f23e9
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3278.379 ; gain = 0.000 ; free physical = 7130 ; free virtual = 20876
+Ending Power Optimization Task | Checksum: 1d35f23e9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3278.379 ; gain = 52.723 ; free physical = 7151 ; free virtual = 20897
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1d35f23e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3278.379 ; gain = 0.000 ; free physical = 7151 ; free virtual = 20897
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3278.379 ; gain = 0.000 ; free physical = 7151 ; free virtual = 20897
+Ending Netlist Obfuscation Task | Checksum: 186bbd5eb
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3278.379 ; gain = 0.000 ; free physical = 7151 ; free virtual = 20897
+INFO: [Common 17-83] Releasing license: Implementation
+102 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 3278.379 ; gain = 52.723 ; free physical = 7154 ; free virtual = 20900
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3278.379 ; gain = 0.000 ; free physical = 7113 ; free virtual = 20871
+INFO: [Common 17-1381] The checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ebaz4205_wrapper_drc_opted.rpt -pb ebaz4205_wrapper_drc_opted.pb -rpx ebaz4205_wrapper_drc_opted.rpx
+Command: report_drc -file ebaz4205_wrapper_drc_opted.rpt -pb ebaz4205_wrapper_drc_opted.pb -rpx ebaz4205_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7055 ; free virtual = 20839
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d6db65fa
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7055 ; free virtual = 20839
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7055 ; free virtual = 20839
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 783f549b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.92 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7040 ; free virtual = 20824
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 13000b4a3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7042 ; free virtual = 20826
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 13000b4a3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7042 ; free virtual = 20826
+Phase 1 Placer Initialization | Checksum: 13000b4a3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7042 ; free virtual = 20826
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1cab61349
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7013 ; free virtual = 20797
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 12c9a079c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7010 ; free virtual = 20794
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1b917fe84
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7010 ; free virtual = 20794
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 2b3ce017b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7004 ; free virtual = 20788
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 15 LUTNM shape to break, 379 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 15, total 15, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 171 nets or LUTs. Breaked 15 LUTs, combined 156 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7003 ; free virtual = 20786
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           15  |            156  |                   171  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           15  |            156  |                   171  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1fba8bb41
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7006 ; free virtual = 20790
+Phase 2.4 Global Placement Core | Checksum: 1fbd207af
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:12 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7002 ; free virtual = 20786
+Phase 2 Global Placement | Checksum: 1fbd207af
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:12 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7005 ; free virtual = 20789
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1ab17ee9f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:13 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7005 ; free virtual = 20789
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1ec24d80f
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:14 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7004 ; free virtual = 20788
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1b1394718
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:14 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7004 ; free virtual = 20788
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 23217046f
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:14 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7004 ; free virtual = 20788
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 202be6d88
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:15 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6992 ; free virtual = 20776
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: b958d810
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:18 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6989 ; free virtual = 20773
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: be984e01
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:18 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6990 ; free virtual = 20774
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: e1e9e3b2
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:19 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6993 ; free virtual = 20777
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 16899a368
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:21 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6971 ; free virtual = 20755
+Phase 3 Detail Placement | Checksum: 16899a368
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:21 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6971 ; free virtual = 20755
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1b1f62da7
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-35.873 | TNS=-873.246 |
+Phase 1 Physical Synthesis Initialization | Checksum: 211434a81
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6959 ; free virtual = 20742
+INFO: [Place 46-33] Processed net ebaz4205_i/HDMI/v_tc_0/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1b64a5e83
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6959 ; free virtual = 20743
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1b1f62da7
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:24 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6959 ; free virtual = 20743
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-31.407. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 131dc0400
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:44 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6993 ; free virtual = 20778
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:44 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6993 ; free virtual = 20778
+Phase 4.1 Post Commit Optimization | Checksum: 131dc0400
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20778
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 131dc0400
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20779
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 131dc0400
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20779
+Phase 4.3 Placer Reporting | Checksum: 131dc0400
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20779
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20779
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20779
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1375f3f69
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6994 ; free virtual = 20779
+Ending Placer Task | Checksum: 1144a4939
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:45 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6993 ; free virtual = 20778
+INFO: [Common 17-83] Releasing license: Implementation
+143 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:25 ; elapsed = 00:00:46 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 7009 ; free virtual = 20794
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6929 ; free virtual = 20786
+INFO: [Common 17-1381] The checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file ebaz4205_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6928 ; free virtual = 20773
+INFO: [runtcl-4] Executing : report_utilization -file ebaz4205_wrapper_utilization_placed.rpt -pb ebaz4205_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ebaz4205_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6934 ; free virtual = 20780
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6907 ; free virtual = 20754
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 4.81s |  WALL: 1.46s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6907 ; free virtual = 20754
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-31.407 | TNS=-801.020 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1d1f053e5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6908 ; free virtual = 20755
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-31.407 | TNS=-801.020 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1d1f053e5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6909 ; free virtual = 20756
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-31.407 | TNS=-801.020 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-31.246 | TNS=-800.699 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.892 | TNS=-799.993 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0011. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.757 | TNS=-799.765 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_12_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.667 | TNS=-799.588 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 5 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.636 | TNS=-799.526 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.627 | TNS=-799.508 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007_repN. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_15_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0109. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.601 | TNS=-799.472 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0005. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[1]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0115. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.574 | TNS=-798.560 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_6_comp
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.459 | TNS=-798.330 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.433 | TNS=-798.278 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_2_comp_1
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.314 | TNS=-798.040 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_2_comp
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.254 | TNS=-797.920 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.220 | TNS=-797.852 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_6_comp_1
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.198 | TNS=-797.808 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.182 | TNS=-797.776 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.158 | TNS=-797.728 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[1]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0113. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.037 | TNS=-796.984 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-30.002 | TNS=-796.914 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0116. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.952 | TNS=-796.814 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0116. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0116. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_1_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0115. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.884 | TNS=-796.732 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_2_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0116. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.871 | TNS=-796.706 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_9_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0109. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.871 | TNS=-796.711 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0109_repN_1.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_12_comp_1
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0109_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.859 | TNS=-796.663 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0109_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0211.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_14
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0211. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.820 | TNS=-796.507 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0211. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0211. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_14_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.766 | TNS=-796.315 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0107. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0206. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.737 | TNS=-796.199 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0209.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_17
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0209. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.730 | TNS=-796.171 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0109_repN_1. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_12_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0210. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.716 | TNS=-796.136 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0207. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0216. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.422 | TNS=-794.344 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0211. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_14_comp_1.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0216. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.412 | TNS=-794.362 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_comp_3.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0214. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.290 | TNS=-793.204 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0214. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0214. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_i_5_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0212. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.224 | TNS=-793.008 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_repN_1. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_comp_4.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0210. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.164 | TNS=-792.772 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0210_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0310.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_i_16
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0310. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.118 | TNS=-792.588 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0212_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0313.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_i_9
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0313. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.082 | TNS=-792.444 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0317. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0317. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_i_3_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.077 | TNS=-792.502 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_repN.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_comp
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.077 | TNS=-792.502 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0212. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0210. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-29.070 | TNS=-792.382 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0318. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.768 | TNS=-789.434 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_2_comp_2.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0316. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.745 | TNS=-789.070 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_repN_1. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_comp_3.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0316. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.583 | TNS=-788.208 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_repN. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_comp_4.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0316. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.494 | TNS=-787.876 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[3]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0316. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.458 | TNS=-787.260 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0314. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0312. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0310. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0310. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.452 | TNS=-787.237 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0310. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0308. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0308. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_15_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.386 | TNS=-787.023 |
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0411. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0411. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.378 | TNS=-787.006 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0316_repN_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.370 | TNS=-786.918 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0411. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[4]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[4]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.354 | TNS=-785.229 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0410. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0410. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_17_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.313 | TNS=-784.911 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0409. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0409. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_16_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.151 | TNS=-783.709 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0308. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_15_comp_1.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0417. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-28.049 | TNS=-783.129 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0417. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0415. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0413. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0512. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[5]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.928 | TNS=-781.695 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[5]_INST_0_comp_1.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.922 | TNS=-781.203 |
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0409. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_16_comp_1.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419_repN_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.849 | TNS=-780.787 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.848 | TNS=-780.775 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.839 | TNS=-780.667 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0616.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[5]_INST_0_i_10
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0616. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.828 | TNS=-780.535 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.811 | TNS=-780.331 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0620. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[6]. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[6]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0620. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.763 | TNS=-779.275 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419_repN_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0521. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.736 | TNS=-779.113 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0520. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0520. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[4]_INST_0_i_2_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.716 | TNS=-779.017 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0620_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0721. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0721. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[6]_INST_0_i_3_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.628 | TNS=-777.810 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0521. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0520. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[5]_INST_0_i_4_comp_4.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.626 | TNS=-777.834 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[7]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0720. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0718. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0718. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.620 | TNS=-777.742 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0823. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0821. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0920. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.557 | TNS=-776.608 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0923. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0923. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.546 | TNS=-776.396 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0923. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1022. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.435 | TNS=-774.176 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0921. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1127. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1127. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[10]_INST_0_i_1_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.385 | TNS=-773.088 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1225. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1227. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[13]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.360 | TNS=-772.396 |
+INFO: [Physopt 32-571] Net ebaz4205_i/AM_demodulator/sqrt32_0/U[13] was not replicated.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.312 | TNS=-772.300 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.308 | TNS=-772.188 |
+INFO: [Physopt 32-81] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-772.076 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/P[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp5[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp1[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-769.877 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__1_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-769.559 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp1[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry__1_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-769.430 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/P[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp5[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-769.313 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-769.307 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[2]_2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[2]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[2].carrychain[0].ppadd.b_is_even.stageLSB.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ls/opt_has_pipe.first_q[0]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ls/opt_has_pipe.first_q[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-768.867 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[0]_0[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[0]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[0].carrychain[9].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ms/opt_has_pipe.first_q[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ms/opt_has_pipe.first_q[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-769.356 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__49_carry__0_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-768.858 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[2].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ls/opt_has_pipe.first_q[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_cos_ls/opt_has_pipe.first_q[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-767.641 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-766.143 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/ComplexMult/mult_sin/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[8].ppadd.b_is_even.stageN.lut_sig. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-765.969 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-765.713 |
+INFO: [Physopt 32-81] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.304 | TNS=-765.581 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_12_comp
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.296 | TNS=-765.565 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_15_comp_1
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.297 | TNS=-765.567 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007_repN.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_15_comp_2
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0007_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.187 | TNS=-765.347 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0116_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0115. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0113. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[1]_INST_0_i_9_comp
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.163 | TNS=-765.251 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0107. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0207. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0212. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0210. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0208. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0206. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0314. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0312. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0310. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0410. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0417. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0415. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0413. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0512. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.146 | TNS=-765.047 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.086 | TNS=-764.327 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0620. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0620_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0721. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[7]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0720. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0823. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0821. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0923. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0921. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1225. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1227. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/P[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp5[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.086 | TNS=-764.327 |
+Phase 3 Critical Path Optimization | Checksum: 24b1bb0ef
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6876 ; free virtual = 20723
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.086 | TNS=-764.327 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0013_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Net driver ebaz4205_i/AM_demodulator/sqrt32_0/U[0]_INST_0_i_2_comp_2 was replaced.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0015_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.081 | TNS=-764.317 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0005. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0107. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0207. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0212. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0210. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0208. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0206. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0206. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_i_17_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-27.042 | TNS=-764.101 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0216_repN.  Re-placed instance ebaz4205_i/AM_demodulator/sqrt32_0/U[2]_INST_0_i_4_comp
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0216_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-26.981 | TNS=-763.735 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0308. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0314. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0312. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0310. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0410. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0417. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0415. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0413. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0512. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0519_repN_1. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[5]_INST_0_i_4_comp_5.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0620. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-26.959 | TNS=-763.439 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0409. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0419_repN_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0521. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0521. Critical path length was reduced through logic transformation on cell ebaz4205_i/AM_demodulator/sqrt32_0/U[3]_INST_0_i_19_comp.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0520. Optimization improves timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0617. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0620_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0721. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[7]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0720. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0823. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0821. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0923. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0921. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1225. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1227. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net ebaz4205_i/AM_demodulator/sqrt32_0/U[13] was not replicated.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/P[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp5[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0009. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0005. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0105. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0111. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0107. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0207. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0212. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0210. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0208. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0308. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0318. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0314. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0312. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0310. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0410. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0417. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0415. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0413. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0512. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0517_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0617. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0620_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0721. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[7]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0720. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0823. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0821. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0819. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0923. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b0921. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1126. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/x1225. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/inst/b1227. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/sqrt32_0/U[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/AM_demodulator/c_addsub_0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/S[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/P[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__206_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp5[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__101_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/ComplexMult/mult_cos/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ls/opt_has_pipe.first_q[1]_repN. Optimizations did not improve timing on the net.
+Phase 4 Critical Path Optimization | Checksum: 24b1bb0ef
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:00:37 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6897 ; free virtual = 20744
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6897 ; free virtual = 20744
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-26.914 | TNS=-762.971 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          4.493  |         38.049  |           16  |              0  |                    97  |           0  |           2  |  00:00:35  |
+|  Total          |          4.493  |         38.049  |           16  |              0  |                    97  |           0  |           3  |  00:00:35  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6897 ; free virtual = 20744
+Ending Physical Synthesis Task | Checksum: 1f200bf77
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:00:37 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6897 ; free virtual = 20745
+INFO: [Common 17-83] Releasing license: Implementation
+770 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:09 ; elapsed = 00:00:39 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6906 ; free virtual = 20753
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6840 ; free virtual = 20757
+INFO: [Common 17-1381] The checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: ea4eb2e0 ConstDB: 0 ShapeSum: 16d94383 RouteDB: 0
+Post Restoration Checksum: NetGraph: 955e5535 NumContArr: e807c840 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 17d661d75
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6780 ; free virtual = 20687
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 17d661d75
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6752 ; free virtual = 20659
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 17d661d75
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6752 ; free virtual = 20659
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 147d9df60
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6735 ; free virtual = 20642
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.995| TNS=-747.279| WHS=-0.288 | THS=-407.731|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 143862b26
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6727 ; free virtual = 20633
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.995| TNS=-746.871| WHS=N/A    | THS=N/A    |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: fe78be0c
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6722 ; free virtual = 20628
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0398367 %
+  Global Horizontal Routing Utilization  = 0.0287224 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 23320
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 23318
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1062ffcac
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6717 ; free virtual = 20624
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1062ffcac
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 3285.434 ; gain = 0.000 ; free physical = 6717 ; free virtual = 20624
+Phase 3 Initial Routing | Checksum: 166e48547
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:14 . Memory (MB): peak = 3303.398 ; gain = 17.965 ; free physical = 6693 ; free virtual = 20600
+INFO: [Route 35-580] Design has 23 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+========================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                    |
++====================+===================+========================================================+
+| clk_fpga_1         | clk_fpga_1        | ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[16]/D |
+| clk_fpga_1         | clk_fpga_1        | ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[4]/D  |
+| clk_fpga_1         | clk_fpga_1        | ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[5]/D  |
+| clk_fpga_1         | clk_fpga_1        | ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[21]/D |
+| clk_fpga_1         | clk_fpga_1        | ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[6]/D  |
++--------------------+-------------------+--------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1392
+ Number of Nodes with overlaps = 342
+ Number of Nodes with overlaps = 114
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-31.998| TNS=-871.948| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 20e3526ff
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:40 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6697 ; free virtual = 20604
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 306
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.993| TNS=-941.539| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: e8271c74
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:45 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6701 ; free virtual = 20609
+Phase 4 Rip-up And Reroute | Checksum: e8271c74
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:45 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6701 ; free virtual = 20609
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1093b95ba
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:46 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6701 ; free virtual = 20609
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-31.998| TNS=-871.948| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: d180f045
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:46 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6699 ; free virtual = 20606
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: d180f045
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:46 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6699 ; free virtual = 20606
+Phase 5 Delay and Skew Optimization | Checksum: d180f045
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:46 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6699 ; free virtual = 20606
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 159f44d8e
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:47 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6698 ; free virtual = 20606
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-31.947| TNS=-858.311| WHS=-0.041 | THS=-0.061 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 18aa3d725
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:47 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6699 ; free virtual = 20606
+WARNING: [Route 35-468] The router encountered 16 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[13]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[29]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[14]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[30]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[12]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[28]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[25]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[9]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[4]/D
+	ebaz4205_i/I2S/I2S_Transmitter_0/inst/buffer_reg[7]/D
+	.. and 6 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 102eb64dd
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:47 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6699 ; free virtual = 20606
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.4146 %
+  Global Horizontal Routing Utilization  = 12.6618 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 51.3514%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 56.7568%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1328b4c52
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:47 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6698 ; free virtual = 20606
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1328b4c52
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:47 . Memory (MB): peak = 3333.398 ; gain = 47.965 ; free physical = 6696 ; free virtual = 20604
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 19286e0ac
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:48 . Memory (MB): peak = 3349.406 ; gain = 63.973 ; free physical = 6694 ; free virtual = 20602
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1eaeb41b5
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:48 . Memory (MB): peak = 3349.406 ; gain = 63.973 ; free physical = 6696 ; free virtual = 20603
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-31.947| TNS=-858.311| WHS=0.053  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1eaeb41b5
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:49 . Memory (MB): peak = 3349.406 ; gain = 63.973 ; free physical = 6696 ; free virtual = 20603
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:49 . Memory (MB): peak = 3349.406 ; gain = 63.973 ; free physical = 6759 ; free virtual = 20666
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+790 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:32 ; elapsed = 00:00:50 . Memory (MB): peak = 3349.406 ; gain = 63.973 ; free physical = 6759 ; free virtual = 20666
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3349.406 ; gain = 0.000 ; free physical = 6691 ; free virtual = 20673
+INFO: [Common 17-1381] The checkpoint '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ebaz4205_wrapper_drc_routed.rpt -pb ebaz4205_wrapper_drc_routed.pb -rpx ebaz4205_wrapper_drc_routed.rpx
+Command: report_drc -file ebaz4205_wrapper_drc_routed.rpt -pb ebaz4205_wrapper_drc_routed.pb -rpx ebaz4205_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file ebaz4205_wrapper_methodology_drc_routed.rpt -pb ebaz4205_wrapper_methodology_drc_routed.pb -rpx ebaz4205_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file ebaz4205_wrapper_methodology_drc_routed.rpt -pb ebaz4205_wrapper_methodology_drc_routed.pb -rpx ebaz4205_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file ebaz4205_wrapper_power_routed.rpt -pb ebaz4205_wrapper_power_summary_routed.pb -rpx ebaz4205_wrapper_power_routed.rpx
+Command: report_power -file ebaz4205_wrapper_power_routed.rpt -pb ebaz4205_wrapper_power_summary_routed.pb -rpx ebaz4205_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+802 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file ebaz4205_wrapper_route_status.rpt -pb ebaz4205_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file ebaz4205_wrapper_timing_summary_routed.rpt -pb ebaz4205_wrapper_timing_summary_routed.pb -rpx ebaz4205_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ebaz4205_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ebaz4205_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ebaz4205_wrapper_bus_skew_routed.rpt -pb ebaz4205_wrapper_bus_skew_routed.pb -rpx ebaz4205_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Memdata 28-208] The XPM instance: <ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ebaz4205_i/HDMI/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <ebaz4205_i/HDMI/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ebaz4205_i/HDMI/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <ebaz4205_i/HDMI/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ebaz4205_i/HDMI/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force ebaz4205_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*A4*A1)+((~A5)*(~A4)*A6*(~A3)*A1)+((~A5)*(~A4)*(~A6)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A3)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*A5*A1*A4)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN (net: ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 42 net(s) have no routable loads. The problem bus(es) and/or net(s) are ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.rd_rst_reg[1:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.wr_rst_reg[1:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.wr_rst_reg[1:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb... and (the first 15 of 25 listed).
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER/FIR_I_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER/FIR_Q_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER/FIR_I_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER/FIR_Q_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (ebaz4205_i/HDMI/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 5 Warnings, 5 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ebaz4205_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 3620.500 ; gain = 223.066 ; free physical = 6542 ; free virtual = 20552
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 22:17:38 2023...
